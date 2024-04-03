@@ -15,7 +15,9 @@ def clear():
         _ = os.system('cls')
 
 def pegar_lista_idiomas():
-    teste = "Olá Mundo"
+    
+    teste = input("Digite uma mensagem: ")
+   # teste = "Olá Mundo"
     driver = webdriver.Chrome()
     driver.get("https://www.reverso.net")
 
