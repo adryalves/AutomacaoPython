@@ -37,6 +37,7 @@ def pegar_lista_idiomas():
             valor = driver.find_element(By.XPATH, "/html/body/app-root/app-translation/div/app-translation-box/div[1]/div[1]/div[2]/div[2]/div[1]")
             valor = valor.text
             res = valor.replace("\n", " ou: ");
+            clear();
             if not valor:
                 valor = driver.find_element(By.XPATH, "/html/body/app-root/app-translation/div/app-translation-box/div[1]/div[1]/div[2]/div[2]/div[1]/div/span")
             retorno.append(f"{teste} em {idioma} é: {res}")
